@@ -1,0 +1,63 @@
+server:
+    port: 8888
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    clone-on-start: true
+                    uri: git@github.com:sushant380/golmal-config.git
+                    ignoreLocalSshSettings: true
+                    hostKey: someHostKey
+                    hostKeyAlgorithm: ssh-rsa
+                    privateKey: |
+                        -----BEGIN OPENSSH PRIVATE KEY-----
+                        b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABBcDvuQC1
+                        O0VK0A4U/vJ4KAAAAAEAAAAAEAAAIXAAAAB3NzaC1yc2EAAAADAQABAAACAQDxgGmB2Odm
+                        r6WhY6565wOXP6qwTInmWSw7gNeqFLF3+HsnSLTN0e11/0B5sxcumYWSeHKdtzG5BgP2fb
+                        onMHkJX+hz8tGm0aSp+Gg/tVNuIwFfuSsTShkW6A1iaL4TQlSROo6UkjOjHTghDeei6CWQ
+                        uXCp3Z8Tbc0k8MYmu7lmgY0XDg+lTxMfLVF72xXC/JluwcgV8Wltz6huvvmSnu2+ZpES4V
+                        ljmIUBap7P+EKlyI1OC5qVTZefnPxxdLjeOrwpHN9IhTrrfPCO2zE93JQi4s82M1RMx9Tq
+                        HwMNu1u6SXISo3RvPV/zThjEID4sdWv2nxnV5hnI/E1A8tAw7DYQGOmThWgDXo6JqUT7q4
+                        6SLciyl91nSK69rYAp07MzSBQw7K0XdtnqkZepKAwkg5gQpVdIHnfKPEmvOYrkMsh6RdSV
+                        TG2tWzmTqdc4R+vA3cIQ0R7oULp5nccKpwudEnll0QKem/FHJsDmnboo1cXVPVpf5LzfKe
+                        iaUxdnkhkhctqHVFiEaW8u6byqOc5GVBFynp9BniWhmKupogNkLIVl8D1V0UGbmji4CVe8
+                        W1Rfu40QOiGOyjBN6G/kCnZe2ma3n0Wgf1t1ePkX4UZGtZU7vQz4URJjCt3/wb1NgGjXNc
+                        BiverNbhvvfDBRGSVr3dLsxQ0jYyPcC7Ra1Hmyf7L+TQAAB2BcEASakcADgCAfwWQCuNY3
+                        BF7zN8MoLPsBLn67W7Kt9igL/MXPud8tF55iSA9JBW+2Bhl/74S5E8XCXO0nlsmXnnNvxD
+                        ppH5wsKU+d5U0M2aS+KLUIQuylnfebhLh16cS2gcBrfKZblGZqauh2Z0FygVJn1Bhyoo44
+                        tKs+kLGxkViKNS+28E0yqxG+xzKMmNCUz82O5XczfeMvZGXgJM122fBZVLzdUgiuavOIbt
+                        P/ztRESOQ5BSMWUmM39BJp1QGoA0Ew1Witdft0nQOyTXxbyoHCyGODzgDLXxPflPvzh7sa
+                        AbfZG13TPXVK0zGnj5M+LBMc3RR4IDIH0NYK9A5lqjIjiy9Tb+Mlvpnu7y0fnbbUGwW+hu
+                        QkymonNfP8bxJdoApAW+uV+oFwBkWabW3CaCZCg8uSp7WAODid/j4KZX09pL3Og+aAIqVK
+                        FeiESy6CbXHkECb77WB+8KRY0xDYJ92hmnBB+NyiQQcrwznBHlWKZ3rUReNDl2cVguVgjg
+                        rA1Spi3HXgvnfNMfLbEOG61YMMMBFXpDr5UQ0CpI++43JtNIzLToPnhufj0QNsj5LvVeph
+                        02JWO0AvE/jkar1iBHDpuuenyk03hC+7GGq1W4DXPJSe65q/Bb5R5GGgDsMtnHF2ZBeZfl
+                        /OCVykkhBOeYZ7NuwAFxSqnT0y59zCXi1ghmnICrb2ptAcem2aKHtr/oI5SfI3pTxTeM3T
+                        ubAGm3lSh9/2Wo1OsIyYVatnaP3fWvUnfpf9Bzw8wgCwJsp4718REE8Ao1XEe1JwJFGLsX
+                        zIuDMuBxvUe6kC7TWGuA8Tu7fEAO1L6RHab0h2ifErZRfLCmZu+rSimQeKrw61iR0bo94w
+                        GNsN07W9O4Z+7YNz1vgNswFBsJRi3hRJNI5bhtIFu/m6prfdZaW1EfIw7ViCY+2CmNBn0o
+                        tmtdiOT6cue2cWRcPe6A19wE5eS92+eItrNeuSs0kKz4HRz72RHmpOfcptEjrJEurZloFH
+                        IHCu6fbP+DDBXXD8tB++KWDnsbgZBdJYfk9erRyh2T9YVY+fluxkevoW6uC42gkPTv63Cd
+                        +DD4aytrH3q/GDxTIVgRj7k1EfuMbgXb9ECceU/cWomEncHGyzHwXsaO2SDAYrE6+GvbvU
+                        Q9Vl00UMfM89KUuaDXvzntNPfxAvBl1k9DtH1wwq/qACLGrUJphKVLqdopt6Zow3e0qsi6
+                        gk8D7KrWV4pyEoDdlr90B1+KHq5xNTKKJM47rBtvwtPw5VqlJJk9c/EKBu1Tcg1t+mj5J+
+                        mSeuB8LdcsSkG4y/RkrrR3Oc6r56Qhqc8CohC38F9p/qBQQb23plGRjR9QU0H/qzIo12so
+                        LEFKDr78IrYpF9imD6H2n2rNePCAlM75P189pEbHk072xkBWKjV1CQiXkMp1jPs6y06sGb
+                        2Cuth6HpnljD/CyWd7ijGohouGz8SSc5JbvU0nwcM2ujoFrEpRtvVvIAsnQdVWN3jx8jv/
+                        QiXzRaUkdmQhwBlCus0tFCnqgRiwJ5VGhzdU5F0iVKX+dsfzp6ZlMSw5IHovjztVlUSQY0
+                        5uDq+IGdj6kI7pL35liLN7S25OGpLnAvFiFA5cvwN/pdhWBObZerZlbTAOm04KqM11Gf00
+                        hSg3RUcPs3vFRtdy0bBi9HVP9GdaKJuab5phSdkwAwFZymN8JqxaZe88RgOi6WoLVzLDaf
+                        QeOVeWBUulzCSEV36okay9W2THRIxrbFjOMmcyMPd4bav37A7ONDkEh8FvyZgsyi/12LVc
+                        E0fsAP+LvXUlbkG845mD39joI3NP+jaPzczUc7e5WFA4CD2fVur+8B+phrJa6sneuAs9TV
+                        DsI+6Y6tf+leXcE2uGWlYYjQU6JbIIni0nYhEDVxzHEvBvrItw38hRmbbwKDx0M2/7Oogx
+                        3v+toErn+9vNrnPZx1pzEfpjyiqZZkZOV4h3WUYfTy/uqyiZDGg+pT2Imo57TqX9j6QyND
+                        CCxFa3X+n2eN5i1pucAROV+nqYSRbm48GV0CpGouPGYMpdxS7tMzfh4hJqZuQRkRzqB4O/
+                        KA0NcE8SFfHvSL9hXp6l59u+awDHLibG3J8fLO5jF/kuBNAAYXI8yZ5IIwPrld5pp+uHh2
+                        PU+nllGI2aMxzOE2bc6iwsIfh0Tcpa2CmIKlG0QYcRzIoT6RS12hOq/bXiHwqJEVN5dLFQ
+                        CdfesyGH/4BCrn+XECFhTdLb6J0lnHQfvOfKyohgBXy7ZFIzji4Res58W6vcasxXvZXwsy
+                        WsjY4oldz6eN7qTLx4glAiVuQF2xF2fpM0YbZJFqZjv/K/n6DsSPfSafT6z/hujzxeWACe
+                        xOO07CTRE7A6kpMTOTzsuXm1AGOM6ROeRWLFFWdIxYkafCIkzSrjWFazRfgLX79kV2QQ7i
+                        e53EqDzKFeSP11B9A9bag7BVW1+Wv84Os8aYoNgZknUJkoUICvcdkSkm8zRkETJUW5ltG1
+                        kfB5I3PkM00HTyi/LXEMb3g4cI7s4u5IPz/30VLQswrOLW
+                        -----END OPENSSH PRIVATE KEY-----
