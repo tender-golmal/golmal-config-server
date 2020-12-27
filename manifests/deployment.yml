@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: golmalconfigserver 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: golmalconfigserver
+  template:
+    metadata:
+      labels:
+        app: golmalconfigserver 
+    spec:
+      containers:
+        - name: golmalconfigserver 
+          image: golmalcicd.azurecr.io/golmalconfigserver
+          ports:
+          - containerPort: 8080
