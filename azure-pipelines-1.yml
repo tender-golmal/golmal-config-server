@@ -20,7 +20,7 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  
+  GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
 
 stages:
 - stage: Build
